@@ -1,5 +1,5 @@
 <template>
-	<div class='menu_item'>
+	<div class='menu_item' @click="jumpToDetail">
 		<div class='description'>
 			<div class="rich-text">
 				<p style="line-height:0; margin-bottom:5px;">
@@ -25,6 +25,14 @@
 </template>
 
 <script>
+	export default{
+		props:['articleId'],
+		methods:{
+			jumpToDetail(){
+				window.location.href='/#/article/detail?id='+this.articleId;
+			}
+		}
+	}
 </script>
 
 <style scoped>

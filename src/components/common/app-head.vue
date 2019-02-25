@@ -1,13 +1,13 @@
 <template>
 	<div class="app_head" id="app_head">
-		<span class="text">{{title}}</span>
+		<span class="text">{{headTitle}}</span>
 	</div>
 </template>
 
 <script>
 	export default {
-		props:['title'],
-		name: 'AppHead'
+		props:['headTitle'],
+		
 	}
 </script>
 
@@ -17,7 +17,7 @@
 	}
 
 	.app_head {
-		width: 375px;
+		width: 100%;
 		height: 45px;
 		left: 0px;
 		top: 20px;
